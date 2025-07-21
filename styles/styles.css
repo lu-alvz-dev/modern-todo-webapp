@@ -25,10 +25,21 @@ body {
 button {
   cursor: pointer;
   border: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  background-color: #03375b;
+  color: #fff;
 }
 
 input {
   outline: none;
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border: 0.01px solid #e5e4e4;
+  color: #444;
+  /* box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); */
 }
 
 .card {
