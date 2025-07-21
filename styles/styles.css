@@ -50,3 +50,9 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
