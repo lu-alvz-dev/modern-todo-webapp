@@ -45,3 +45,8 @@ h1 {
   color: #03375b;
   font-weight: bold;
 }
+
+.new-task {
+  display: flex;
+  justify-content: center;
+}
