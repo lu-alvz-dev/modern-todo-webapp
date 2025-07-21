@@ -39,3 +39,9 @@ input {
   flex-direction: column;
   border-radius: 2rem;
 }
+
+h1 {
+  font-size: 5rem;
+  color: #03375b;
+  font-weight: bold;
+}
