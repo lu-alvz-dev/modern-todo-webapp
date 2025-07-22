@@ -75,4 +75,17 @@ h1 {
 
 .add-btn {
   border-radius: 0 1rem 1rem 0;
+  border: 1px solid #e5e4e4;
+}
+
+.all {
+  border-radius: 1rem 0 0 1rem;
+}
+
+.active {
+  border-radius: 0;
+}
+
+.done {
+  border-radius: 0 1rem 1rem 0;
 }
