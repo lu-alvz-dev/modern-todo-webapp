@@ -8,3 +8,9 @@ const taskList = document.getElementById("task-list");
 const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
 
 let fltr = "all";
+
+const clearList = () => {
+  taskList.textContent = "";
+};
+
+const render = function () {};
