@@ -15,7 +15,7 @@ const clearList = () => {
 
 //save array of tasks in localStorage
 const saveTasks = () => {
-  localStorage.setItem(task, JSON.stringify(tasks));
+  localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
 const render = function () {
