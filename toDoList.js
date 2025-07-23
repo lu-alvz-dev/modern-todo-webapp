@@ -18,4 +18,10 @@ const saveTasks = () => {
   localStorage.setItem(task, JSON.stringify(tasks));
 };
 
-const render = function () {};
+const render = function () {
+  clearList();
+};
+
+//rendering To-Do List
+
+render();
