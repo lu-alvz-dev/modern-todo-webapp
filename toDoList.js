@@ -27,7 +27,12 @@ const render = function () {
 render();
 
 //Adding new task
-add.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {
   //getting task from input
   const newTask = document.getElementById("task").value;
+
+  // pushing tasks into task array
+  tasks.push({ newTask, isChecked: false });
+
+  saveTask();
 });
