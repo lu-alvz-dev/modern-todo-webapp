@@ -34,7 +34,8 @@ add.addEventListener("click", () => {
   // pushing tasks into task array
   tasks.push({ newTask, isChecked: false });
 
-  saveTask();
+  saveTasks();
   //reseting the input
   document.getElementById("task").value = "";
+  render();
 });
