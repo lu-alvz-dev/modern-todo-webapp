@@ -25,3 +25,13 @@ const render = function () {
 //rendering To-Do List
 
 render();
+
+//Adding new task
+add.addEventListener("click", () => {
+
+
+ 
+ 
+
+  
+});
