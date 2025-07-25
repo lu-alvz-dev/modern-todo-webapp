@@ -22,7 +22,11 @@ const render = function () {
   //clearing list
   clearList();
   // filtering active, done and all tasks
-  const filterList = tasks.filter((filteredTask) => {});
+  const filterList = tasks.filter((filteredTask) => {
+    if (filteredTask === "all") return true;
+    if (filteredTask === "active") return !filteredTask.isChecked;
+    if (filteredTask === "done") return filteredTask.isChecked;
+  });
 };
 
 //rendering To-Do List
