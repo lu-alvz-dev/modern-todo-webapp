@@ -27,6 +27,10 @@ const render = function () {
     if (filteredTask === "active") return !filteredTask.isChecked;
     if (filteredTask === "done") return filteredTask.isChecked;
   });
+
+  //looping filter list to render each task
+
+  filterList.forEach((fltrTasl, i) => {});
 };
 
 //rendering To-Do List
