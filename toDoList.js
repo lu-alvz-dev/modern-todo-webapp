@@ -19,7 +19,10 @@ const saveTasks = () => {
 };
 
 const render = function () {
+  //clearing list
   clearList();
+  // filtering active, done and all tasks
+  const filterList = tasks.filter((filteredTask) => {});
 };
 
 //rendering To-Do List
