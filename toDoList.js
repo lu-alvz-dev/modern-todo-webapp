@@ -30,7 +30,10 @@ const render = function () {
 
   //looping filter list to render each task
 
-  filterList.forEach((fltrTasl, i) => {});
+  filterList.forEach((fltrTasl, i) => {
+    //creating label
+    const label = document.createElement("label");
+  });
 };
 
 //rendering To-Do List
