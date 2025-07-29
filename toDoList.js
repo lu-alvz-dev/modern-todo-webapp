@@ -50,6 +50,10 @@ const render = function () {
 
     //setting the value checked into input newtask  from filtered tasks
     input.checked = fltrTask.isChecked;
+    //creating task delete button
+    const delBtn = document.createElement("button");
+    delBtn.classList.add("del_btn");
+    delBtn.textContent("X");
   });
 };
 
