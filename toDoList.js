@@ -33,6 +33,9 @@ const render = function () {
   filterList.forEach((fltrTasl, i) => {
     //creating label
     const label = document.createElement("label");
+
+    //setting for attribute for label to link input checkbox
+    label = setAttribute("for", "checkTask");
   });
 };
 
