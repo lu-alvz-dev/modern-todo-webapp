@@ -35,7 +35,7 @@ const render = function () {
     const label = document.createElement("label");
 
     //setting for attribute for label to link input checkbox
-    label = setAttribute("for", "checkTask");
+    label.setAttribute("for", "checkTask");
   });
 };
 
