@@ -30,13 +30,18 @@ const render = function () {
 
   //looping filter list to render each task
 
-  filterList.forEach((fltrTasl, i) => {
+  filterList.forEach((fltrTask, i) => {
     //creating label
     const label = document.createElement("label");
 
     //setting for attribute for label to link input checkbox
     label.setAttribute("for", "checkTask");
-    label.classList.add("taslLabel");
+    label.classList.add("taskLabel");
+
+    //transfering task from user to Html label
+    label.textContent = fltrTask.newTask;
+
+    // creating input checkbox for new task
   });
 };
 
