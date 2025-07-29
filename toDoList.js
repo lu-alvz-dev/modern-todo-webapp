@@ -41,7 +41,12 @@ const render = function () {
     //transfering task from user to Html label
     label.textContent = fltrTask.newTask;
 
-    // creating input checkbox for new task
+    // creating input checkbox for new task and adding attributes
+    const input = document.createElement("input");
+
+    input.setAttribute("type", "checkbox");
+    input.setAttribute("id", "checkTask");
+    input.setAttribute("name", "checkTask");
   });
 };
 
