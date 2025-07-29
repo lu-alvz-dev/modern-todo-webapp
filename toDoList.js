@@ -36,6 +36,7 @@ const render = function () {
 
     //setting for attribute for label to link input checkbox
     label.setAttribute("for", "checkTask");
+    label.classList.add("taslLabel");
   });
 };
 
