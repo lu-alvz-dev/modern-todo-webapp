@@ -47,6 +47,9 @@ const render = function () {
     input.setAttribute("type", "checkbox");
     input.setAttribute("id", "checkTask");
     input.setAttribute("name", "checkTask");
+
+    //setting the value checked into input newtask  from filtered tasks
+    input.checked = fltrTask.isChecked;
   });
 };
 
