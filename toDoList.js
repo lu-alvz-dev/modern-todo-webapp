@@ -75,6 +75,13 @@ const render = function () {
     //adding div element to task section
     section.appendChild("div");
   });
+
+  //adding forEach to add listener to button filter selected
+  filter.forEach((ftr) => {
+    ftr.addEventListener("click", () => {
+      fltr = ftr.dataset.fltr;
+    });
+  });
 };
 
 //rendering To-Do List
