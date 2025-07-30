@@ -56,6 +56,7 @@ h1 {
   font-size: 5rem;
   color: #03375b;
   font-weight: bold;
+  align-self: center;
 }
 
 .new-task {
