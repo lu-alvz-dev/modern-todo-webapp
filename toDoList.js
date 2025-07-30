@@ -1,6 +1,6 @@
 // DOOM variables
 
-const task = document.getEmentById("task");
+const task = document.getElementById("task");
 const add = document.getElementById("add");
 const filter = document.querySelector(".filter");
 const taskList = document.getElementById("task-list");
@@ -67,11 +67,12 @@ const render = function () {
     //Creating div element to wrap input and label task
     const div = document.createElement("div");
 
-    div.append("input");
-    div.append("label");
+    div.appendChild("input");
+    div.appendChild("label");
 
+    if (input.checked) div.append("delBtn");
     //adding div element to task section
-    Selection.append("div");
+    section.appendChild("div");
   });
 };
 
