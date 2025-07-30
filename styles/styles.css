@@ -99,7 +99,6 @@ h1 {
 .del_btn {
   margin-left: auto;
   background-color: #ffffff;
-  border: 0.5rem solid #e5e4e4;
   color: #03375b;
   font-size: 1.6rem;
 }
@@ -111,4 +110,5 @@ h1 {
   gap: 1rem;
   font-size: 2.2rem;
   background-color: #fff;
+  padding: 1.5rem;
 }
