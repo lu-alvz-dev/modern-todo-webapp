@@ -89,3 +89,20 @@ h1 {
 .done {
   border-radius: 0 1rem 1rem 0;
 }
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.del_btn {
+  background-color: #ffffff;
+  border: 0.5rem solid #e5e4e4;
+  color: #03375b;
+  font-size: 1.6rem;
+}
+
+.task_container {
+  display: flex;
+  justify-content: space-between;
+}
