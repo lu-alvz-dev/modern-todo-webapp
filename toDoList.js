@@ -69,6 +69,9 @@ const render = function () {
 
     div.append("input");
     div.append("label");
+
+    //adding div element to task section
+    Selection.append("div");
   });
 };
 
