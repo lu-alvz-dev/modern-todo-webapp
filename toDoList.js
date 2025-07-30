@@ -54,7 +54,7 @@ const render = function () {
     //creating task delete button
     const delBtn = document.createElement("button");
     delBtn.classList.add("del_btn");
-    delBtn.textContent("X");
+    delBtn.textContent = "X";
 
     // Adding Listener to update checked value  to task
 
