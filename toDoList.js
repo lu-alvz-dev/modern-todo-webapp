@@ -74,6 +74,8 @@ const render = function () {
     //Creating div element to wrap input and label task
     const div = document.createElement("div");
 
+    div.classList.add("task_container");
+
     div.appendChild(input);
     div.appendChild(label);
 
