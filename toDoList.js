@@ -2,7 +2,7 @@
 
 const task = document.getElementById("task");
 const add = document.getElementById("add");
-const filter = document.querySelector(".filter");
+const filter = document.querySelectorAll("flt_btn");
 const taskList = document.getElementById("task-list");
 
 const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
@@ -70,6 +70,7 @@ const render = function () {
     div.appendChild("input");
     div.appendChild("label");
 
+    // adding if to append delbtn to div when a tasj is done
     if (input.checked) div.append("delBtn");
     //adding div element to task section
     section.appendChild("div");
