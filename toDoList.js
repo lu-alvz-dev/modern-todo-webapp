@@ -56,6 +56,11 @@ const render = function () {
     delBtn.classList.add("del_btn");
     delBtn.textContent = "X";
 
+    //Listener for delBtn
+    delBtn.addEventListener("click", () => {
+      tasks.splice(i, 1);
+    });
+
     // Adding Listener to update checked value  to task
 
     input.addEventListener("change", () => {
