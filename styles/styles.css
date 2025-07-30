@@ -97,8 +97,7 @@ h1 {
 }
 
 .del_btn {
-  align-self: flex-start;
-  order: 1;
+  margin-left: auto;
   background-color: #ffffff;
   border: 0.5rem solid #e5e4e4;
   color: #03375b;
