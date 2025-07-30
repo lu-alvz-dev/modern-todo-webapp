@@ -71,7 +71,7 @@ const render = function () {
     div.appendChild(label);
 
     // adding if to append delbtn to div when a tasj is done
-    if (input.checked) div.append(delBtn);
+    if (input.checked) div.appendChild(delBtn);
     //adding div element to task section
     section.appendChild(div);
   });
@@ -80,6 +80,7 @@ const render = function () {
   filter.forEach((ftr) => {
     ftr.addEventListener("click", () => {
       fltr = ftr.dataset.fltr;
+      render();
     });
   });
 };
