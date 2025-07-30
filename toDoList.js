@@ -67,13 +67,13 @@ const render = function () {
     //Creating div element to wrap input and label task
     const div = document.createElement("div");
 
-    div.appendChild("input");
-    div.appendChild("label");
+    div.appendChild(input);
+    div.appendChild(label);
 
     // adding if to append delbtn to div when a tasj is done
-    if (input.checked) div.append("delBtn");
+    if (input.checked) div.append(delBtn);
     //adding div element to task section
-    section.appendChild("div");
+    section.appendChild(div);
   });
 
   //adding forEach to add listener to button filter selected
