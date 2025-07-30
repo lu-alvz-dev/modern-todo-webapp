@@ -63,6 +63,9 @@ const render = function () {
       saveTasks();
       render();
     });
+
+    //Creating div element to wrap input and label task
+    const div = document.createElement("div");
   });
 };
 
