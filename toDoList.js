@@ -66,6 +66,9 @@ const render = function () {
 
     //Creating div element to wrap input and label task
     const div = document.createElement("div");
+
+    div.append("input");
+    div.append("label");
   });
 };
 
