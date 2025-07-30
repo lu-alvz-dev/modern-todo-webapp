@@ -23,9 +23,9 @@ const render = function () {
   clearList();
   // filtering active, done and all tasks
   const filterList = tasks.filter((filteredTask) => {
-    if (filteredTask === "all") return true;
-    if (filteredTask === "active") return !filteredTask.isChecked;
-    if (filteredTask === "done") return filteredTask.isChecked;
+    if (fltr === "all") return true;
+    if (fltr === "active") return !filteredTask.isChecked;
+    if (fltr === "done") return filteredTask.isChecked;
   });
 
   //looping filter list to render each task
@@ -45,7 +45,7 @@ const render = function () {
     const input = document.createElement("input");
 
     input.setAttribute("type", "checkbox");
-    input.setAttribute("id", "checkTask");
+    input.setAttribute("id", `${checkTask[i]}`);
     input.setAttribute("name", "checkTask");
 
     //setting the value checked into input newtask  from filtered tasks
@@ -59,7 +59,7 @@ const render = function () {
     // Adding Listener to update checked value  to task
 
     input.addEventListener("change", () => {
-      tasks.isChecked = input.checked;
+      tasks[i].isChecked = input.checked;
       saveTasks();
       render();
     });
