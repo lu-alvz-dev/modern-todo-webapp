@@ -2,7 +2,7 @@
 
 const task = document.getElementById("task");
 const add = document.getElementById("add");
-const filter = document.querySelectorAll("flt_btn");
+const filter = document.querySelectorAll(".flt_btn");
 const taskList = document.getElementById("task-list");
 
 const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
