@@ -73,7 +73,7 @@ const render = function () {
     // adding if to append delbtn to div when a tasj is done
     if (input.checked) div.appendChild(delBtn);
     //adding div element to task section
-    section.appendChild(div);
+    taskList.appendChild(div);
   });
 
   //adding forEach to add listener to button filter selected
