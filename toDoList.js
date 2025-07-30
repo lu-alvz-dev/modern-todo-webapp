@@ -35,7 +35,7 @@ const render = function () {
     const label = document.createElement("label");
 
     //setting for attribute for label to link input checkbox
-    label.setAttribute("for", `checkTask${[i]}`);
+    label.setAttribute("for", `checkTask${i}`);
     label.classList.add("taskLabel");
 
     //transfering task from user to Html label
@@ -45,7 +45,7 @@ const render = function () {
     const input = document.createElement("input");
 
     input.setAttribute("type", "checkbox");
-    input.setAttribute("id", `checkTask${[i]}`);
+    input.setAttribute("id", `checkTask${i}`);
     input.setAttribute("name", "checkTask");
 
     //setting the value checked into input newtask  from filtered tasks
@@ -99,8 +99,8 @@ filter.forEach((ftr) => {
 //Adding new task
 add.addEventListener("click", () => {
   //getting task from input
-  const newTask = document.getElementById("task").value;
-
+  const newTask = document.getElementById("task").value.trim();
+  if (newTask === "") return;
   // pushing tasks into task array
   tasks.push({ newTask, isChecked: false });
 
