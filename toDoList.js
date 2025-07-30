@@ -59,6 +59,8 @@ const render = function () {
     //Listener for delBtn
     delBtn.addEventListener("click", () => {
       tasks.splice(i, 1);
+      saveTasks();
+      render();
     });
 
     // Adding Listener to update checked value  to task
@@ -80,19 +82,19 @@ const render = function () {
     //adding div element to task section
     taskList.appendChild(div);
   });
-
-  //adding forEach to add listener to button filter selected
-  filter.forEach((ftr) => {
-    ftr.addEventListener("click", () => {
-      fltr = ftr.dataset.fltr;
-      render();
-    });
-  });
 };
 
 //rendering To-Do List
 
 render();
+
+//adding forEach to add listener to button filter selected
+filter.forEach((ftr) => {
+  ftr.addEventListener("click", () => {
+    fltr = ftr.dataset.fltr;
+    render();
+  });
+});
 
 //Adding new task
 add.addEventListener("click", () => {
