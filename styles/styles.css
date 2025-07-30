@@ -96,6 +96,8 @@ h1 {
 }
 
 .del_btn {
+  align-self: flex-start;
+  order: 1;
   background-color: #ffffff;
   border: 0.5rem solid #e5e4e4;
   color: #03375b;
@@ -104,5 +106,9 @@ h1 {
 
 .task_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.2rem;
+  background-color: #fff;
 }
