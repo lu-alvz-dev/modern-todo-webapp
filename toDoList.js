@@ -47,6 +47,7 @@ const render = function () {
     input.setAttribute("type", "checkbox");
     input.setAttribute("id", `checkTask${i}`);
     input.setAttribute("name", "checkTask");
+    input.classList.add("check_size");
 
     //setting the value checked into input newtask  from filtered tasks
     input.checked = fltrTask.isChecked;
