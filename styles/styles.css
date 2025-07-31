@@ -112,3 +112,10 @@ h1 {
   background-color: #fff;
   padding: 1.5rem;
 }
+
+.check_size {
+  accent-color: #03375b;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 2rem;
+}
