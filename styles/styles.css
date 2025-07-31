@@ -67,7 +67,7 @@ h1 {
 .filter {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.3rem;
 }
 
 .task {
@@ -101,6 +101,7 @@ h1 {
   background-color: #ffffff;
   color: #03375b;
   font-size: 1.6rem;
+  padding: 0;
 }
 
 .task_container {
@@ -111,6 +112,9 @@ h1 {
   font-size: 2.2rem;
   background-color: #fff;
   padding: 1.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e5e4e4 #e5e4e4 transparent #e5e4e4;
 }
 
 .check_size {
@@ -118,4 +122,13 @@ h1 {
   width: 2rem;
   height: 2rem;
   border-radius: 2rem;
+}
+
+.task_container:first-child {
+  border-radius: 1rem 1rem 0 0;
+}
+
+.task_container:last-child {
+  border-radius: 0 0 1rem 1rem;
+  border-bottom: 1px solid #e5e4e4;
 }
