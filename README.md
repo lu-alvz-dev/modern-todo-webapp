@@ -31,6 +31,9 @@ As a junior developer, this project helped me understand and practice:
 - Building features that reflect real user needs
 
 ---
+## 🌐 Live Demo
+
+[👉 View Live Demo](https://lu-alvz-dev.github.io/modern-todo-webapp/) 
 
 ## 🚀 How to Run It
 
