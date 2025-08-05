@@ -97,6 +97,12 @@ render();
 filter.forEach((ftr) => {
   ftr.addEventListener("click", () => {
     fltr = ftr.dataset.fltr;
+    ftr.classList.add("clicked");
+    filter.forEach((filtered) => {
+      ftr.dataset.fltr === filtered.dataset.fltr ||
+        filtered.classList.remove("clicked");
+    });
+
     render();
   });
 });
