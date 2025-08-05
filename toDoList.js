@@ -30,14 +30,14 @@ const render = function () {
 
   //looping filter list to render each task
 
-  filterList.forEach((fltrTask, i) => {
+  filterList.forEach((fltrTask) => {
     const tasksIndex = tasks.indexOff(fltrTask);
 
     //creating label
     const label = document.createElement("label");
 
     //setting for attribute for label to link input checkbox
-    label.setAttribute("for", `checkTask${i}`);
+    label.setAttribute("for", `checkTask${tasksIndex}`);
     label.classList.add("taskLabel");
 
     //transfering task from user to Html label
@@ -47,7 +47,7 @@ const render = function () {
     const input = document.createElement("input");
 
     input.setAttribute("type", "checkbox");
-    input.setAttribute("id", `checkTask${i}`);
+    input.setAttribute("id", `checkTask${tasksIndex}`);
     input.setAttribute("name", "checkTask");
     input.classList.add("check_size");
 
@@ -61,7 +61,7 @@ const render = function () {
 
     //Listener for delBtn
     delBtn.addEventListener("click", () => {
-      tasks.splice(i, 1);
+      tasks.splice(tasksIndex, 1);
       saveTasks();
       render();
     });
@@ -69,7 +69,7 @@ const render = function () {
     // Adding Listener to update checked value  to task
 
     input.addEventListener("change", () => {
-      tasks[i].isChecked = input.checked;
+      tasks[tasksIndex].isChecked = input.checked;
       saveTasks();
       render();
     });
