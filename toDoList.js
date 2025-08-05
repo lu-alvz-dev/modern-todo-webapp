@@ -31,7 +31,7 @@ const render = function () {
   //looping filter list to render each task
 
   filterList.forEach((fltrTask) => {
-    const tasksIndex = tasks.indexOff(fltrTask);
+    const tasksIndex = tasks.indexOf(fltrTask);
 
     //creating label
     const label = document.createElement("label");
