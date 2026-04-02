@@ -5,17 +5,10 @@ const add = document.getElementById("add");
 const filter = document.querySelectorAll(".flt_btn");
 const taskList = document.querySelector(".task-list");
 
-const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
 let fltr = "all";
 
 const clearList = () => {
   taskList.textContent = "";
-};
-
-//save array of tasks in localStorage
-const saveTasks = () => {
-  localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
 const render = function () {
