@@ -1,5 +1,5 @@
 export const getTasks = () => {
-  JSON.parse(localStorage.getItem("tasks")) || [];
+  return JSON.parse(localStorage.getItem("tasks")) || [];
 };
 
 //save array of tasks in localStorage
