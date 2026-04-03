@@ -50,6 +50,9 @@ addBtn.addEventListener("click", () => {
 
 filters.forEach((btn) => {
   btn.addEventListener("click", () => {
+    filters.forEach((b) => b.classList.remove("clicked"));
+    btn.classList.add("clicked");
+
     currentFilter = btn.dataset.fltr;
     render();
   });
